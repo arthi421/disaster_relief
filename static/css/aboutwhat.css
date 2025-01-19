@@ -1,0 +1,540 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Logo Section */
+.logo-container {
+    position: absolute;
+    top: 15px;
+    left: 2px;
+    z-index: 10;
+}
+
+.logo img {
+    height: 100px;
+    width: auto;
+}
+
+/* Top Bar */
+.top-bar {
+    background-color: #000;
+    color: #fff;
+    margin-left: 170px;
+    margin-right: 20px;
+    padding: 8px 10px;
+    position: relative;
+    z-index: 2;
+}
+
+.header-icons a {
+    color: #fff;
+    margin-left: 20px;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+.header-icons a:hover {
+    color: #f7c200;
+}
+
+/* Navigation Bar */
+.navbar-container {
+    background-color: #fff;
+    margin-left: 170px;
+    margin-right: 20px;
+    padding: 5px 10px;
+    border-bottom: 2px solid #f7c200;
+    position: relative;
+    z-index: 2;
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.nav-list {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    position: relative;
+}
+
+.nav-list li a {
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+    font-size: 15px;
+    transition: color 0.3s ease;
+}
+
+.nav-list li a:hover {
+    color: #f7c200;
+}
+
+/* Sign Up and Login Buttons */
+.header-right {
+    position: absolute;
+    right: 10px;
+    display: flex;
+    gap: 20px;
+    font-size: 15px;
+}
+
+/* Dropdown Menu */
+.dropdown {
+    position: relative;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    list-style: none;
+    padding: 10px 0;
+    top: 100%;
+    left: 0;
+    font-size: 15px;
+    z-index: 10;
+}
+
+.dropdown-menu li {
+    margin: 0;
+}
+
+.dropdown-menu a {
+    color: #000;
+    padding: 8px 20px;
+    display: block;
+    transition: background 0.3s ease;
+}
+
+.dropdown-menu a:hover {
+    background-color: #f7c200;
+    color: #fff;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+/* Hero Section */
+#hero-section {
+    background: url('../images/about.jpg') no-repeat center center fixed;
+    background-size: cover;
+    height: 100vh;
+    position: relative;
+    z-index: 1;
+}
+.strips-container {
+    position: absolute;
+    top: 30%;
+    left: 5%;
+    background: url('../images/s2.png') no-repeat center center;
+    background-size: cover;
+    width: 420px;
+    height: 250px;
+    z-index: 2;
+}
+
+.square-container {
+    position: absolute;
+    top: 20px;
+    left: 25px;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    width: calc(125% - 100px);
+    height: calc(140% - 100px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 3;
+}
+/* Font Face for title.otf */
+@font-face {
+    font-family: 'TitleFont';
+    src: url('../fonts/Winter\ Selfie.otf') format('truetype');
+}
+.square-container p {
+    font-size: 21px;
+    color:navy;
+    text-align: center;
+    font-family:TitleFont;
+    margin: 0;
+}
+html {
+    scroll-behavior: smooth;
+}
+.headerStyles {
+    position: relative;
+    top: 25px;
+}
+
+.headerStyles {
+    position: relative;
+    top: 25px;
+}
+/* Footer Section */
+.footer-section {
+    font-family: Arial, sans-serif;
+    color: #333;
+}
+
+/* Footer Top Section */
+.footer-top {
+    background-color: #000;
+    color: #fff;
+    padding: 20px 0;
+}
+
+.footer-logo img {
+    width: 120px;
+    margin-left:20px;
+    margin-top: 20px;
+}
+
+.footer-chart img {
+    width: 100px;
+    margin-bottom: 10px;
+}
+
+.donate-btn {
+    background-color: #ff4500;
+    color: #fff;
+    border: none;
+    padding: 8px 12px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.donate-btn:hover {
+    background-color: #e03d00;
+}
+
+/* Footer Navigation */
+.footer-nav h5 {
+    margin-bottom: 15px;
+}
+
+.footer-nav ul li {
+    margin-bottom: 8px;
+}
+
+.footer-nav a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-nav a:hover {
+    color: #ff4500;
+}
+
+/* Footer Bottom Section */
+.footer-bottom {
+    background-color: #f8f9fa;
+    font-size: 14px;
+}
+
+.footer-bottom a {
+    color: #000;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-bottom a:hover {
+    color: #ff4500;
+}
+
+/* Social Icons */
+.footer-social a {
+    color: #000;
+    margin: 0 10px;
+    font-size: 18px;
+    transition: color 0.3s;
+}
+
+.footer-social a:hover {
+    color: #ff4500;
+}
+
+
+/* Scroll Down Button */
+.scroll-down {
+    font-size: 1.2rem;
+    margin-top: 320px;
+    font-weight: bold;
+    color: #fff;
+    border: 2px solid #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+}
+
+.scroll-down:hover {
+    background-color: #f7c200;
+    border-color: #f7c200;
+    color: #000;
+}
+
+/* Disaster Relief Section */
+#disaster-relief-section .container {
+    margin-bottom: 150px; /* Adds gap between the squares and wave */
+}
+
+/* Wave Styling */
+.wave {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.wave svg {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+#disaster-relief-section {
+    background-color: #234c61;
+    padding: 50px 0;
+    position: relative;
+}
+
+/* Background Image */
+#disaster-relief-section::before {
+    content: '';
+    position: absolute;
+    top: 3cm; /* Top 3cm visible */
+    left: 3cm; /* Left 3cm visible */
+    right: 0;
+    bottom: 0;
+    background-image: url('{{ url_for("static", filename="images/blue.jpg") }}');
+    background-size: cover;
+    background-position: center;
+    z-index: -1; /* Ensure image stays behind the content */
+    width: calc(100% - 3cm); /* Ensure the image width respects the 3cm gap */
+    height: calc(100% - 3cm); /* Ensure the image height respects the 3cm gap */
+}
+
+/* Headings and Text */
+#disaster-relief-section h1 {
+    font-size: 2.5rem;
+    color: #b4d4e4;
+    margin-bottom: 20px;
+}
+
+#disaster-relief-section p {
+    font-size: 1.2rem;
+    color: #333;
+    margin-bottom: 40px;
+}
+
+/* Square Containers */
+.square {
+    background-color: #b4d4e4;
+    color: white;
+    width: 200px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    border-radius: 10px;
+    padding: 10px;
+    z-index: 1; /* Ensure the squares are in front of the background */
+}
+
+.square-title {
+    font-size: 1.2rem;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+/* Circle Layout for Images */
+.circle-layout {
+    position: absolute;
+    bottom: -20px;
+    right: -20px;
+    width: 80px;
+    height: 80px;
+    background-color: #fff;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.circle-layout img {
+    width: 120%;
+    height: 120%;
+    object-fit: cover;
+}
+
+/* Flexbox Layout for Side-by-Side Squares */
+.d-flex {
+    display: flex;
+    justify-content: center;
+    gap: 50px; /* Ensure large gap */
+    padding: 20px 0; /* Add padding for better spacing */
+}
+
+/* Padding and Gap Between Squares */
+.mt-5 {
+    margin-top: 50px;
+}
+
+/* Responsive Design for Smaller Screens */
+@media (max-width: 768px) {
+    .d-flex {
+        flex-direction: column;
+        align-items: center;
+        gap: 30px; /* Increased gap for smaller screens */
+    }
+    
+    .square {
+        width: 150px;
+        height: 150px;
+    }
+    
+    .circle-layout {
+        width: 50px;
+        height: 50px;
+    }
+}
+/* When Disasters Come Section */
+.when-disasters-come-section {
+    background-color: #b4d4e4; /* Light blue background */
+    padding: 50px 0;
+}
+
+.when-disasters-come-section .title {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #234c61; /* Darker text for contrast */
+    margin-bottom: 20px;
+}
+
+.when-disasters-come-section .content {
+    font-size: 1.2rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.when-disasters-come-section .content-list {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+.when-disasters-come-section .quote {
+    font-size: 1.5rem;
+    font-style: italic;
+    color: #234c61;
+    border-left: 5px solid #234c61;
+    padding-left: 20px;
+    margin-bottom: 20px;
+}
+
+.when-disasters-come-section .quote-author {
+    font-size: 1.2rem;
+    color: #234c61;
+    text-align: right;
+    font-weight: bold;
+}
+
+/* Image Slider Styles */
+.image-slider-container {
+    margin-top: 30px;
+    text-align: center;
+}
+.slide {
+    display: none;
+}
+  .slide:first-child {
+    display: block;
+}
+  
+
+.slider {
+    position: relative;
+    max-width: 100%;
+    overflow: hidden;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.slider-wrapper {
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.slider-track {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slider-track img {
+    width: 100%;
+    max-width: 300px; /* Adjust width to fit the design */
+    height: auto;
+    margin-right: 10px; /* Space between images */
+    border-radius: 4px;
+}
+
+.slider-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    font-size: 1.5rem;
+    line-height: 40px;
+    text-align: center;
+    z-index: 10;
+}
+
+.slider-btn:hover {
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.left-btn {
+    left: 10px;
+}
+
+.right-btn {
+    right: 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .when-disasters-come-section .row {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .when-disasters-come-section .col-md-6 {
+        width: 100%;
+        text-align: center;
+    }
+
+    .slider-track img {
+        max-width: 90%; /* Smaller images for mobile view */
+    }
+}

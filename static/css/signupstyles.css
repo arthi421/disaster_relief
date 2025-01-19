@@ -1,0 +1,204 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-image: url('../images/volunside.png');
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap; /* Allow wrapping for smaller screens */
+    justify-content: center;
+    gap: 70px; /* Space between sections */
+    width: 90%;
+    max-width: 1200px;
+    padding: 20px;
+}
+
+.left-section {
+    flex: none; /* Prevent resizing */
+    width: 350px; /* Fixed width */
+    height: 250px; /* Fixed height */
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    align-self: center; /* Center vertically with right-section */
+}
+
+.left-section h1 {
+    font-size: 28px;
+    margin-bottom: 15px;
+}
+
+.left-section p {
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+.left-section .login-btn {
+    background-color: white;
+    color: #5f4b8b;
+    padding: 12px 25px;
+    border: 2px solid #5f4b8b;
+    border-radius: 30px;
+    cursor: pointer;
+    font-size: 20px;
+    transition: background-color 0.3s ease;
+}
+
+.left-section .login-btn:hover {
+    background-color: #e1d4e3;
+}
+
+.social-icons {
+    margin-top: 20px;
+}
+
+.social-icon {
+    margin: 5px;
+    font-size: 20px;
+    color: #5f4b8b;
+    transition: color 0.3s ease;
+}
+
+.social-icon:hover {
+    color: #9a7de5;
+}
+
+.right-section {
+    flex: 1; /* Allow resizing for the right section */
+    min-width: 200px; /* Prevent sections from being too narrow */
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    padding: 30px; /* Increased padding for better layout */
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px; /* Increased gap for spacing */
+    margin-left: 50px; /* Move the container to the right */
+}
+
+.right-section h2 {
+    font-size: 22px; /* Increased font size for better readability */
+    margin-bottom: 15px; /* Increased margin to space from form */
+    text-align: center; /* Center-align the heading */
+}
+
+.form-section {
+    display: block;
+}
+
+.form-group {
+    margin-bottom: 20px; /* Increased space between form groups */
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 10px; /* Increased space between label and input */
+    font-size: 16px; /* Adjusted font size for better alignment */
+}
+
+input, textarea, select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px; /* Larger font size for better readability */
+}
+
+.radio-group {
+    display: flex; /* Use flexbox for alignment */
+    align-items: center; /* Align radio buttons and text vertically */
+    gap: 20px; /* Add spacing between the radio button and label */
+    margin-bottom: 20px; /* Increased space between groups */
+}
+
+input[type="radio"] {
+    margin: 0; /* Remove default margin */
+    width: 20px; /* Set a consistent size */
+    height: 20px;
+}
+
+textarea, select {
+    font-size: 16px; /* Larger font size for better readability */
+}
+
+.previous-btn {
+    background-color: #6c757d; /* Gray background */
+    color: #fff; /* White text */
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    margin-right: 15px; /* Adds gap between the Previous button and Next button */
+}
+
+.previous-btn:hover {
+    background-color: #5a6268; /* Darker gray on hover */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.previous-btn:active {
+    background-color: #4e555b; /* Even darker gray on click */
+    transform: scale(0.98);
+}
+.next-btn {
+    background-color: #007bff; /* Blue background */
+    color: #fff; /* White text */
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    margin-left: 15px; /* Adds gap between the Previous button and Next button */
+}
+
+.next-btn:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.next-btn:active {
+    background-color: #004085; /* Even darker blue on click */
+    transform: scale(0.98);
+}
+
+.submit-btn {
+    background-color: #28a745; /* Green background */
+    color: #fff; /* White text */
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    margin-left: 20px; /* Adds gap between the Previous button and Submit button */
+}
+
+.submit-btn:hover {
+    background-color: #218838; /* Darker green on hover */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.submit-btn:active {
+    background-color: #1e7e34; /* Even darker green on click */
+    transform: scale(0.98);
+}

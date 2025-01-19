@@ -1,0 +1,494 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Logo Section */
+.logo-container {
+    position: absolute;
+    top: 15px;
+    left: 2px;
+    z-index: 10;
+}
+
+.logo img {
+    height: 100px;
+    width: auto;
+}
+
+/* Top Bar */
+.top-bar {
+    background-color: #000;
+    color: #fff;
+    margin-left: 170px;
+    margin-right: 20px;
+    padding: 6px 8px; /* Decreased size */
+    position: relative;
+    z-index: 2;
+}
+
+.header-icons a {
+    color: #fff;
+    margin-left: 20px;
+    font-size: 18px; /* Increased font size */
+    transition: color 0.3s ease;
+}
+
+.header-icons a:hover {
+    color: #f7c200;
+}
+
+/* Navigation Bar */
+.navbar-container {
+    background-color: #fff;
+    margin-left: 170px;
+    margin-right: 20px;
+    padding: 3px 8px; /* Decreased size */
+    border-bottom: 2px solid #f7c200;
+    position: relative;
+    z-index: 2;
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.nav-list {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    position: relative;
+}
+
+.nav-list li a {
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+    font-size: 17px; /* Increased font size */
+    transition: color 0.3s ease;
+}
+
+.nav-list li a:hover {
+    color: #f7c200;
+}
+
+/* Sign Up and Login Buttons */
+.header-right {
+    position: absolute;
+    right: 10px;
+    display: flex;
+    gap: 20px;
+    font-size: 15px;
+}
+
+/* Dropdown Menu */
+.dropdown {
+    position: relative;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    list-style: none;
+    padding: 10px 0;
+    top: 100%;
+    left: 0;
+    font-size: 15px;
+    z-index: 10;
+}
+
+.dropdown-menu li {
+    margin: 0;
+}
+
+.dropdown-menu a {
+    color: #000;
+    padding: 8px 20px;
+    display: block;
+    transition: background 0.3s ease;
+}
+
+.dropdown-menu a:hover {
+    background-color: #f7c200;
+    color: #fff;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+/* Hero Section */
+#hero-section {
+    background: url('../images/volunteer1.jpg') no-repeat center center fixed;
+    background-size: cover;
+    height: 100vh;
+    position: relative;
+}
+
+.hero-text {
+    position: absolute;
+    top: 60%; /* Adjust this value to move the text lower or higher */
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: black;
+}
+
+.hero-title {
+    font-size: 3.2rem;
+    font-weight: bold;
+}
+
+.hero-subtitle {
+    font-size: 1.5rem;
+    margin-top: 10px;
+}
+
+/* Sign Up and Donate Buttons */
+.header-right a {
+    display: inline-block;
+    margin-right: 10px;
+    font-size: 12px;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+    border-radius: 5px;
+    text-align: center;
+}
+
+/* Customize the Donate Button */
+.header-right a.btn-secondary {
+    background-color: #f7c200;
+    color: #fff;
+}
+
+.header-right a.btn-secondary:hover {
+    background-color: #e6a800;
+}
+
+
+/* After Impact Section */
+#after-impact-section {
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    margin-top: 1px;
+    z-index: 1;
+}
+
+#after-impact-section .video-container {
+    width: 50%;
+}
+
+#after-impact-section .video-container video {
+    width: 100%;
+    height:auto;
+}
+
+#after-impact-section .text-container {
+    width: 50%;
+    padding: 20px;
+}
+
+#after-impact-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+#after-impact-section p {
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+}
+
+#after-impact-section button {
+    margin-top: 15px;
+    padding: 10px 20px;
+    font-size: 1rem;
+}
+
+.headerStyles {
+    position: relative;
+    top: 25px;
+}
+
+.headerStyles {
+    position: relative;
+    top: 25px;
+}
+
+/* Volunteer Disaster Section */
+#volunteer-disaster {
+    background-color: #FAF9F6;
+    padding: 40px 20px;
+}
+#volunteer-disaster .full-width-text {
+    width: 100%;
+    font-size: 1rem;
+    line-height: 1.5;
+    text-align: left;
+    margin: 20px 0;
+    color: #333;
+}
+
+#volunteer-disaster .section-title {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+#volunteer-disaster .content-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+#volunteer-disaster .content-row {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+}
+
+#volunteer-disaster .text-content {
+    width: 48%;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #333;
+    
+}
+
+#volunteer-disaster .image-container {
+    width: 48%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#volunteer-disaster .image-container img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+#volunteer-disaster .additional-info {
+    margin-top: 20px;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #666;
+    width: 100%;
+}
+
+
+/* Volunteer Choose Section */
+#volunteer-choose {
+    background: url('../images/abstract.jpg') no-repeat center center fixed;
+    background-size: cover;
+    padding: 40px 20px;
+}
+
+.background-overlay {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+/* Top Row - Images and Titles */
+.row {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+.square-container {
+    background-color: #fff;
+    width: 300px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.square-container img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+}
+
+.square-container h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.square-container p {
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #666;
+}
+
+/* Text Content Wrapper with Background Icon */
+.text-container-wrapper {
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    padding: 20px;
+}
+
+.text-container-wrapper::before {
+    content: '';
+    position: absolute;
+    top: -40px; /* Offset from the top */
+    left: -40px; /* Offset from the left */
+    width: calc(100% + 80px); /* Adjust to cover all containers and offsets */
+    height: calc(100% + 80px); /* Adjust for offsets */
+    background: url('../images/s3.png') no-repeat;
+    background-size: contain;
+    z-index: -1; /* Send behind the text containers */
+    opacity: 0.7;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .row, .text-container-wrapper {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .square-container {
+        width: 100%;
+    }
+}
+/* Emergency Preparedness Section */
+#volunteer-join {
+    background: url('../images/bg3.jpg') no-repeat center center;
+    background-size: cover;
+    padding: 50px 0;
+}
+
+.join-container {
+    display: flex;
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: #F3D03E;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.join-image {
+    width: 50%;
+    object-fit: cover;
+    border-radius: 8px 0 0 8px;
+}
+
+.join-content {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%;
+}
+
+.join-content h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: #000;
+}
+
+.join-content p {
+    font-size: 1rem;
+    margin-bottom: 20px;
+    color: #333;
+    line-height: 1.5;
+}
+
+.join-content .btn-primary {
+    display: inline-block;
+    background-color: black;
+    color: #fff;
+    text-transform: uppercase;
+    padding: 10px 20px;
+    font-weight: bold;
+    border-radius: 5px;
+    text-align: center;
+    transition: background-color 0.3s ease;
+    text-decoration: none;
+}
+
+.join-content .btn-primary:hover {
+    background-color: #e6a800;
+}
+/* Emergency Preparedness Section */
+#emergency-preparedness {
+    position: relative;
+    background: url('../images/bg2.jpg') no-repeat center center;
+    background-size: cover;
+    padding: 50px 0;
+}
+
+/* Yellow Background Container */
+.yellow-container {
+    position: absolute;
+    top: 40px;
+    left: 45px;
+    background-color: yellow;
+    border-radius: 10px;
+    width: calc(100% - 100px);
+    height: calc(100% - 100px);
+    z-index: 1;
+}
+
+/* Black Content Container */
+.black-container {
+    position: relative;
+    display: flex;
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+    padding: 20px;
+    z-index: 2;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Left-Side Image */
+.preparedness-image {
+    width: 50%;
+    border-radius: 10px 0 0 10px;
+    object-fit: cover;
+}
+
+/* Right-Side Content */
+.preparedness-content {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%;
+}
+
+.preparedness-content h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: #f7c200; /* Yellow Title */
+}
+
+.preparedness-content p {
+    font-size: 1rem;
+    margin-bottom: 15px;
+    line-height: 1.5;
+}

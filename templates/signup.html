@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Volunteer Signup</title>
+    <link rel="stylesheet" href="static/css/signupstyles.css">
+    <!-- Boxicons CDN for icons -->
+    <link href="https://cdn.jsdelivr.net/npm/boxicons@2.1.2/css/boxicons.min.css" rel="stylesheet">
+    <!-- Bootstrap CDN for social media icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="left-section">
+            <h1>Create Account</h1>
+            <p>Sign up to become a volunteer and make a difference</p>
+            <a href="{{ url_for('login_page') }}">
+                <button class="login-btn">Login</button>
+            </a>
+
+            <!-- Social media icons -->
+            <div class="social-icons">
+                <a href="#" class="social-icon"><i class="bi bi-facebook"></i></a>
+                <a href="#" class="social-icon"><i class="bi bi-twitter"></i></a>
+                <a href="#" class="social-icon"><i class="bi bi-instagram"></i></a>
+                <a href="#" class="social-icon"><i class="bi bi-youtube"></i></a>
+                <a href="#" class="social-icon"><i class="bi bi-linkedin"></i></a>
+                <a href="#" class="social-icon"><i class="bi bi-discord"></i></a>
+            </div>
+        </div>
+
+        <div class="right-section">
+            <!-- Personal Info Section (Step 1) -->
+            <div id="personal-info-1" class="form-section">
+                <h2>Personal Info</h2>
+                <div class="form-group">
+                    <label for="first-name">First Name</label>
+                    <input type="text" id="first-name" placeholder="First Name">
+                </div>
+                <div class="form-group">
+                    <label for="last-name">Last Name</label>
+                    <input type="text" id="last-name" placeholder="Last Name">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" placeholder="Email Address">
+                </div>
+                <div class="form-group">
+                    <label for="password">Create Password</label>
+                    <input type="password" id="password" placeholder="Create Password">
+                </div>
+                <div class="form-group">
+                    <label for="confirm-password">Confirm Password</label>
+                    <input type="password" id="confirm-password" placeholder="Confirm Password">
+                </div>
+                <button class="next-btn" onclick="nextSection('personal-info-2')">Next</button>
+            </div>
+
+            <!-- Personal Info Section (Step 2) -->
+            <div id="personal-info-2" class="form-section" style="display: none;">
+                <h2>Personal Info</h2>
+                <div class="form-group">
+                    <label for="dob">Date of Birth</label>
+                    <input type="date" id="dob">
+                </div>
+                <div class="form-group">
+                    <label>Gender</label>
+                    <div class="radio-group">
+                        <label><input type="radio" name="gender" value="male"> Male</label>
+                        <label><input type="radio" name="gender" value="female"> Female</label>
+                        <label><input type="radio" name="gender" value="other"> Other</label>
+                        <label><input type="radio" name="gender" value="prefer-not-to-say"> Prefer not to say</label>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="blood-group">Blood Group (optional)</label>
+                    <input type="text" id="blood-group" placeholder="Blood Group">
+                </div>
+                <div class="form-group">
+                    <label for="state">State</label>
+                    <input type="text" id="state" placeholder="State">
+                </div>
+                <div class="form-group">
+                    <label for="city">City</label>
+                    <input type="text" id="city" placeholder="City">
+                </div>
+                <button class="previous-btn" onclick="previousSection('personal-info-1')">Previous</button>
+                <button class="next-btn" onclick="nextSection('contact-info')">Next</button>
+            </div>
+
+            <!-- Contact Info Section -->
+            <div id="contact-info" class="form-section" style="display: none;">
+                <h2>Contact Info</h2>
+                <div class="form-group">
+                    <label for="phone-number">Phone Number</label>
+                    <input type="text" id="phone-number" placeholder="Phone Number">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" placeholder="Email Address">
+                </div>
+                <div class="form-group">
+                    <label for="address">Address</label>
+                    <textarea id="address" placeholder="Full Address"></textarea>
+                </div>
+                <button class="previous-btn" onclick="previousSection('personal-info-2')">Previous</button>
+                <button class="next-btn" onclick="nextSection('emergency-contact')">Next</button>
+            </div>
+
+            <!-- Emergency Contact Section -->
+            <div id="emergency-contact" class="form-section" style="display: none;">
+                <h2>Emergency Contact</h2>
+                <div class="form-group">
+                    <label for="emergency-name">Emergency Contact Name</label>
+                    <input type="text" id="emergency-name" placeholder="Contact Name">
+                </div>
+                <div class="form-group">
+                    <label for="relationship">Relationship</label>
+                    <input type="text" id="relationship" placeholder="Relationship">
+                </div>
+                <div class="form-group">
+                    <label for="emergency-phone">Emergency Contact Phone</label>
+                    <input type="text" id="emergency-phone" placeholder="Contact Phone">
+                </div>
+                <button class="previous-btn" onclick="previousSection('contact-info')">Previous</button>
+                <button class="next-btn" onclick="nextSection('availability')">Next</button>
+            </div>
+
+            <!-- Availability Section -->
+            <div id="availability" class="form-section" style="display: none;">
+                <h2>Availability</h2>
+                <div class="form-group">
+                    <label for="availability">Days Available</label>
+                    <input type="text" id="availability" placeholder="Weekdays, Weekends, etc.">
+                </div>
+                <button class="previous-btn" onclick="previousSection('emergency-contact')">Previous</button>
+                <button class="next-btn" onclick="nextSection('roles')">Next</button>
+            </div>
+
+            <!-- Roles Section -->
+            <div id="roles" class="form-section" style="display: none;">
+                <h2>Preferred Volunteer Role</h2>
+                <div class="form-group">
+                    <label for="role">Select Role</label>
+                    <select id="role">
+                        <option value="medical-support">Medical Support</option>
+                        <option value="food-distribution">Food Distribution</option>
+                        <option value="search-and-rescue">Search and Rescue</option>
+                        <option value="logistics-transport">Resources Management</option>
+                        <option value="communications">Rehabilitation and Recovery</option>
+                    </select>
+                </div>
+                <button class="previous-btn" onclick="previousSection('availability')">Previous</button>
+                <button class="next-btn" onclick="nextSection('consent')">Next</button>
+            </div>
+
+            <!-- Consent Section -->
+            <div id="consent" class="form-section" style="display: none;">
+                <h2>Consent</h2>
+                <div class="form-group">
+                    <label>Are you willing to travel?</label>
+                    <div>
+                        <label><input type="radio" name="travel" value="yes"> Yes</label>
+                        <label><input type="radio" name="travel" value="no"> No</label>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label>Do you agree to the terms and conditions?</label>
+                    <div>
+                        <label><input type="checkbox" id="terms"> I Agree</label>
+                    </div>
+                </div>
+                <button class="previous-btn" onclick="previousSection('roles')">Previous</button>
+                <button class="submit-btn">Submit</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function nextSection(sectionId) {
+            const sections = document.querySelectorAll('.form-section');
+            sections.forEach(section => section.style.display = 'none');
+            document.getElementById(sectionId).style.display = 'block';
+        }
+
+        function previousSection(sectionId) {
+            const sections = document.querySelectorAll('.form-section');
+            sections.forEach(section => section.style.display = 'none');
+            document.getElementById(sectionId).style.display = 'block';
+        }
+    </script>
+</body>
+</html>

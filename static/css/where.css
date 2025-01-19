@@ -1,0 +1,345 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Logo Section */
+.logo-container {
+    position: absolute;
+    top: 15px;
+    left: 2px;
+    z-index: 10;
+}
+
+.logo img {
+    height: 100px;
+    width: auto;
+}
+
+/* Top Bar */
+.top-bar {
+    background-color: #000;
+    color: #fff;
+    margin-left: 170px;
+    margin-right: 20px;
+    padding: 8px 10px;
+    position: relative;
+    z-index: 2;
+}
+
+.header-icons a {
+    color: #fff;
+    margin-left: 20px;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+.header-icons a:hover {
+    color: #f7c200;
+}
+
+/* Navigation Bar */
+.navbar-container {
+    background-color: #fff;
+    margin-left: 170px;
+    margin-right: 20px;
+    padding: 5px 10px;
+    border-bottom: 2px solid #f7c200;
+    position: relative;
+    z-index: 2;
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.nav-list {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    position: relative;
+}
+
+.nav-list li a {
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+    font-size: 15px;
+    transition: color 0.3s ease;
+}
+
+.nav-list li a:hover {
+    color: #f7c200;
+}
+
+/* Sign Up and Login Buttons */
+.header-right {
+    position: absolute;
+    right: 10px;
+    display: flex;
+    gap: 20px;
+    font-size: 15px;
+}
+
+/* Dropdown Menu */
+.dropdown {
+    position: relative;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    list-style: none;
+    padding: 10px 0;
+    top: 100%;
+    left: 0;
+    font-size: 15px;
+    z-index: 10;
+}
+
+.dropdown-menu li {
+    margin: 0;
+}
+
+.dropdown-menu a {
+    color: #000;
+    padding: 8px 20px;
+    display: block;
+    transition: background 0.3s ease;
+}
+
+.dropdown-menu a:hover {
+    background-color: #f7c200;
+    color: #fff;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+/* Hero Section */
+#hero-section {
+    background: url('../images/about.jpg') no-repeat center center fixed;
+    background-size: cover;
+    height: 100vh;
+    position: relative;
+    z-index: 1;
+}
+.strips-container {
+    position: absolute;
+    top: 30%;
+    left: 5%;
+    background: url('../images/s2.png') no-repeat center center;
+    background-size: cover;
+    width: 420px;
+    height: 250px;
+    z-index: 2;
+}
+
+.square-container {
+    position: absolute;
+    top: 20px;
+    left: 25px;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    width: calc(125% - 100px);
+    height: calc(140% - 100px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 3;
+}
+/* Font Face for title.otf */
+@font-face {
+    font-family: 'TitleFont';
+    src: url('../fonts/Winter\ Selfie.otf') format('truetype');
+}
+.square-container p {
+    font-size: 21px;
+    color:navy;
+    text-align: center;
+    font-family:TitleFont;
+    margin: 0;
+}
+html {
+    scroll-behavior: smooth;
+}
+.headerStyles {
+    position: relative;
+    top: 25px;
+}
+
+.headerStyles {
+    position: relative;
+    top: 25px;
+}
+/* Footer Section */
+.footer-section {
+    font-family: Arial, sans-serif;
+    color: #333;
+}
+
+/* Footer Top Section */
+.footer-top {
+    background-color: #000;
+    color: #fff;
+    padding: 20px 0;
+}
+
+.footer-logo img {
+    width: 120px;
+    margin-left:20px;
+    margin-top: 20px;
+}
+
+.footer-chart img {
+    width: 100px;
+    margin-bottom: 10px;
+}
+
+.donate-btn {
+    background-color: #ff4500;
+    color: #fff;
+    border: none;
+    padding: 8px 12px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.donate-btn:hover {
+    background-color: #e03d00;
+}
+
+/* Footer Navigation */
+.footer-nav h5 {
+    margin-bottom: 15px;
+}
+
+.footer-nav ul li {
+    margin-bottom: 8px;
+}
+
+.footer-nav a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-nav a:hover {
+    color: #ff4500;
+}
+
+/* Footer Bottom Section */
+.footer-bottom {
+    background-color: #f8f9fa;
+    font-size: 14px;
+}
+
+.footer-bottom a {
+    color: #000;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-bottom a:hover {
+    color: #ff4500;
+}
+
+/* Social Icons */
+.footer-social a {
+    color: #000;
+    margin: 0 10px;
+    font-size: 18px;
+    transition: color 0.3s;
+}
+
+.footer-social a:hover {
+    color: #ff4500;
+}
+
+
+/* Section Styling */
+#states-section {
+    background: url('../images/s8.jpg') no-repeat center center;
+    background-size: cover;
+    padding: 50px 0;
+    text-align: center;
+}
+
+#states-section h2 {
+    color: #fff;
+    font-size: 36px;
+    margin-bottom: 20px;
+    font-family: 'TitleFont', Arial, sans-serif;
+}
+
+/* State Boxes Container */
+.states-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Individual State Box */
+.state-box {
+    background-color: #fff;
+    border-radius: 10px;
+    width: 100%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.state-box:hover {
+    transform: scale(1.02);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* State Box Header */
+.state-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    font-size: 20px;
+    font-weight: bold;
+    color: navy;
+}
+
+.state-header .toggle-icon {
+    font-size: 24px;
+    font-weight: bold;
+    color: navy;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.state-header .toggle-icon:hover {
+    color: #f7c200;
+}
+
+/* State Content */
+.state-content {
+    display: none;
+    padding: 20px;
+    font-size: 16px;
+    color: #333;
+    border-top: 1px solid #ddd;
+    line-height: 1.6;
+    background-color: #f9f9f9;
+}
+
+

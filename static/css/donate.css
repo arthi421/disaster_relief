@@ -1,0 +1,671 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Logo Section */
+.logo-container {
+    position: absolute;
+    top: 15px;
+    left: 2px;
+    z-index: 10;
+}
+
+.logo img {
+    height: 150px;
+    width: auto;
+}
+
+/* Top Bar */
+.top-bar {
+    background-color: #000;
+    color: #fff;
+    margin-left: 170px;
+    margin-right: 20px;
+    padding: 8px 10px;
+    position: relative;
+    z-index: 2;
+}
+
+.header-icons a {
+    color: #fff;
+    margin-left: 20px;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+.header-icons a:hover {
+    color: #f7c200;
+}
+
+/* Navigation Bar */
+.navbar-container {
+    background-color: #fff;
+    margin-left: 170px;
+    margin-right: 20px;
+    padding: 2px 7px;
+    border-bottom: 2px solid #f7c200;
+    position: relative;
+    z-index: 2;
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.nav-list {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    position: relative;
+}
+
+.nav-list li a {
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+    font-size: 15px;
+    transition: color 0.3s ease;
+}
+
+.nav-list li a:hover {
+    color: #f7c200;
+}
+
+
+
+/* Dropdown Menu */
+.dropdown {
+    position: relative;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    list-style: none;
+    padding: 10px 0;
+    top: 100%;
+    left: 0;
+    font-size: 15px;
+    z-index: 10;
+}
+
+.dropdown-menu li {
+    margin: 0;
+}
+
+.dropdown-menu a {
+    color: #000;
+    padding: 8px 20px;
+    display: block;
+    transition: background 0.3s ease;
+}
+
+.dropdown-menu a:hover {
+    background-color: #f7c200;
+    color: #fff;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+/* Hero Section */
+#hero-section {
+    background: url('../images/hug.jpg') no-repeat center center fixed;
+    background-size: cover;
+    height: 100vh;
+    position: relative;
+}
+
+
+
+/* Sign Up and Donate Buttons */
+.header-right a {
+    display: inline-block;
+    margin-right: 10px;
+    font-size: 12px;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+    border-radius: 5px;
+    text-align: center;
+}
+
+/* Customize the Donate Button */
+.header-right a.btn-secondary {
+    background-color: #f7c200;
+    color: #fff;
+}
+
+.header-right a.btn-secondary:hover {
+    background-color: #e6a800;
+}
+
+.headerStyles {
+    position: relative;
+    top: 25px;
+}
+
+.headerStyles {
+    position: relative;
+    top: 25px;
+}
+/* Footer Section */
+.footer-section {
+    font-family: Arial, sans-serif;
+    color: #333;
+}
+
+/* First Half: White Section */
+.footer-top {
+    background-color: #fff;
+    padding: 30px 0;
+}
+
+.footer-top h4 {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #333;
+}
+
+.footer-top p {
+    font-size: 1rem;
+    margin: 15px 0;
+}
+
+.donate-btn {
+    background-color: #f7c200;
+    color: #000;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.donate-btn:hover {
+    background-color: #333;
+    color: #fff;
+}
+
+.donut-chart {
+    max-width: 250px;
+    border-radius: 50%;
+}
+
+/* Second Half: Black Section */
+.footer-bottom {
+    background-color: #000;
+    color: #fff;
+}
+
+.footer-bottom a {
+    color: #f7c200;
+    text-decoration: none;
+    margin: 0 10px;
+    transition: color 0.3s ease;
+}
+
+.footer-bottom a:hover {
+    color: #fff;
+    text-decoration: underline;
+}
+
+.footer-bottom p {
+    margin: 5px 0;
+    font-size: 0.9rem;
+}
+
+.social-icons a {
+    color: #fff;
+    font-size: 1.5rem;
+    margin: 0 10px;
+    transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: #f7c200;
+}
+
+/* Smooth Scroll */
+html {
+    scroll-behavior: smooth;
+}
+* Footer Section */
+.footer-wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Top Half: Black Section */
+.footer-top {
+    background-color: #000;
+    color: #fff;
+    padding: 30px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer-top h3 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+}
+.footer-top h4 {
+    color: white;
+}
+
+.footer-top p {
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+.donate-btn {
+    background-color: #f7c200;
+    border: none;
+    color: #000;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+.donate-btn:hover {
+    background-color: #e6a800;
+}
+
+/* Donut Pie Chart */
+.donut-chart img {
+    width: 150px;
+    height: 150px;
+}
+
+/* Bottom Half: White Section */
+.footer-bottom {
+    background-color: #fff;
+    color: #333;
+    padding: 20px;
+    text-align: center;
+}
+
+.footer-bottom a {
+    text-decoration: none;
+    color: #000;
+    margin: 0 10px;
+    transition: color 0.3s;
+}
+
+.footer-bottom a:hover {
+    color: #f7c200;
+}
+
+/* Social Media Icons */
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 10px;
+}
+
+.social-icons a {
+    color: #000;
+    font-size: 1.5rem;
+    transition: color 0.3s;
+}
+
+.social-icons a:hover {
+    color: #f7c200;
+}
+
+/* Smooth Scrolling */
+html {
+    scroll-behavior: smooth;
+}
+
+
+
+/* For Section Content */
+#donate-gift-section {
+    position: relative; /* Keeps content on top of the background */
+    z-index: 1; /* Places content above the background */
+    color: #fff; /* Ensures text is visible on the background */
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    align-items: center;
+}
+
+/* Left Text */
+.text-section {
+    flex: 1; /* Allow it to take up its own space */
+    text-align: left;
+    margin-top: 100px; /* Move text content lower */
+    max-width: 500px; /* Restrict the width of the text content */
+    margin-left: 50px; /* Add space from the left */
+}
+
+/* Optional for better alignment */
+.text-section h2, .text-section p {
+    margin-left: 0; /* Aligns text properly without extra padding */
+    margin-right: 0;
+}
+
+/* Button and Heart Image */
+.button-container {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Space between button and heart image */
+}
+
+.see-categories-button {
+    background-color: #ff6f61; /* Button color */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.see-categories-button:hover {
+    background-color: #e65b50; /* Hover color */
+}
+
+.heart-icon {
+    width: 30px; /* Adjust size of the heart image */
+    height: 30px;
+}
+
+/* Image Frames */
+.frame-1, .frame-2, .frame-3 {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin-top: -100px;
+    margin-bottom: 10px;
+    margin-right: -80px; /* Adds consistent spacing between frames */
+    align-items: center; /* Centers images in each frame */
+}
+
+/* Containers for Column Layout */
+.image-frames-container {
+    display: flex;
+    margin-bottom: 10px;
+    margin-top: -100px;
+    flex-direction: row;
+    gap: -80px; /* Sets consistent spacing between frames */
+    justify-content: flex-end; /* Moves all frames to the right */
+    margin-right: 100px;
+}
+
+/* Image Containers */
+.frame-1 img, .frame-2 img, .frame-3 img {
+    border-radius: 8px;
+    margin-left: 90px;
+    margin-bottom: 8px;
+}
+
+/* Resize Images in Frame 1 */
+.frame-1 .img-1 {
+    max-width: 200px;
+    max-height: 200px;
+}
+
+.frame-1 .img-2 {
+    max-width: 200px;
+    max-height: 200px;
+}
+
+/* Resize Images in Frame 2 */
+.frame-2 .img-1 {
+    max-width: 200px;
+    max-height: 200px;
+}
+
+.frame-2 .img-2 {
+    max-width: 200px;
+    max-height: 200px;
+}
+
+.frame-2 .img-3 {
+    max-width: 200px;
+    max-height: 200px;
+}
+
+/* Resize Images in Frame 3 */
+.frame-3 .img-1 {
+    max-width: 190px;
+    max-height: 190px;
+}
+
+.frame-3 .img-2 {
+    max-width: 190px;
+    max-height: 190px;
+}
+/* General Styles */
+.bg-image {
+    background-image: url('../images/bg2.jpg'); /* Change to bg2.jpg */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh; /* Full viewport height */
+    width: 100%;   /* Full width */
+}
+
+/* Shop Catalog Section */
+.shop-catalog-section {
+    background-image: url('../images/bg3.jpg'); /* Background for shop catalog */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; /* Align text and image to opposite sides */
+    align-items: center;
+    padding: 50px 100px; /* Add padding for spacing */
+    height: 400px; /* Fixed height for the section */
+    color: #fff;
+}
+
+/* Shop Catalog Text */
+.shop-catalog-section .text-content {
+    flex: 1; /* Takes up half of the space */
+    text-align: left;
+}
+
+.shop-catalog-section .text-content h2 {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.shop-catalog-section .text-content h3 {
+    font-size: 2rem;
+    font-weight: bold;
+    margin: 0;
+}
+
+/* Shop Catalog Image */
+.shop-catalog-section .image-content {
+    flex: 1; /* Takes up half of the space */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.shop-catalog-section .image-content .giftbox-image {
+    max-width: 300px; /* Restrict the size of the image */
+    height: auto;
+    border-radius: 8px; /* Slight rounding for the image corners */
+}
+
+/* Gift Bundles Section */
+.gift-bundles-section {
+    background-image: url('../images/bg4.jpg'); /* Background for the gift bundles section */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* Four cards in a row */
+    gap: 20px;
+    width: 100%;
+    max-width: 1200px;
+}
+
+/* Card Style */
+.card {
+    background-color: rgba(255, 255, 255, 0.8); /* Slightly transparent white background */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    padding: 20px;
+    overflow: hidden;
+}
+
+.card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.card h3 {
+    font-size: 1.5rem;
+    margin: 15px 0 10px;
+    color: #333;
+}
+
+.card .price {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #ff6f61;
+    margin-bottom: 15px;
+}
+
+.card .add-to-cart {
+    background-color: #f7c200;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.card .add-to-cart:hover {
+    background-color: #e6a800;
+}
+/* Donation Info Section */
+#donation-info {
+    position: relative;
+    background-image: url('../images/bg1.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 50px;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.white-container {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 30px;
+    border-radius: 10px;
+    max-width: 400px;
+    position: relative;
+    z-index: 2;
+}
+
+.white-container h1 {
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.white-container p {
+    font-size: 1rem;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+.white-container .donate-btn {
+    background-color: #f7c200;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.white-container .donate-btn:hover {
+    background-color: #e6a800;
+}
+
+.decorative-image {
+    position: absolute;
+    margin-top: 100px;
+    margin-right: 20px;
+    max-width: 430px;
+    max-height: 440px;
+    opacity: 0.8;
+    z-index: 1;
+}
+
+.bird-image {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    max-width: 150px;
+    z-index: 3;
+}
+/* New Section Container */
+.new-container {
+    background-color: white;
+    position: relative;
+    margin-top: -140px; /* Position slightly above the Donation Info Section */
+    margin-bottom: -10px; /* Position slightly below the Hero Section */
+    padding: 30px;
+    border-radius: 10px;
+    margin-left: 200px;
+    margin-right: 200px;
+    max-height: 300px;
+    max-width: 1000px;
+    text-align: center;
+}
+
+.new-container h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.new-container p {
+    font-size: 1rem;
+    line-height: 1.5;
+    max-width: 600px;
+    margin: 0 auto;
+}
